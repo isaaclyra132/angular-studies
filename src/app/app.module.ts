@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { MarcaTextoDirective } from './directives/marca-texto.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MarcaTextoDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
